@@ -1,0 +1,17 @@
+{
+  "name": "m17web-wasm",
+  "collaborators": [
+    "Andreas Schmidberger <mail@oe3anc.at>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "m17web_wasm_bg.wasm",
+    "m17web_wasm.js",
+    "m17web_wasm.d.ts"
+  ],
+  "module": "m17web_wasm.js",
+  "types": "m17web_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
