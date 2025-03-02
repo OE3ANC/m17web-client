@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M17 Web Players Dashboard</title>
+  <title>M17 Stream Dashboard</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -62,17 +62,43 @@
 </head>
 <body>
   <div class="dashboard-header">
-    <h1>M17 Web Players Dashboard</h1>
-    <p class="subtitle">Monitor multiple M17 streams with our stylish player cards</p>
+    <h1>M17 Stream Dashboard</h1>
+    <p class="subtitle">You can now tune in to <span class="highlight">live streams</span> of <span class="highlight">M17 Reflectors</span></p>
+
+    <h2>Want Your Reflector Added?</h2>
+
+    <p class="subtitle">If you'd like your reflector to be included in the live streaming options:</p>
+
+    <ul>
+        <li><span class="highlight">Upgrade</span> your mrefd software to version <span class="highlight">0.12 or higher</span></li>
+        <li><span class="highlight">Contact OE3ANC</span> through the <span class="highlight">M17 Discord</span> channel</li>
+    </ul>
   </div>
 
   <div class="section">
     <h2 class="section-title">M17-M17</h2>
     <div class="players-container">
       <m17-web-player 
+        proxy="wss://m17rx.oe3xor.at/M17-M17/A" 
+        label="M17-M17 A">
+      </m17-web-player>
+    </div>
+    <div class="players-container">
+      <m17-web-player 
         proxy="wss://m17rx.oe3xor.at/M17-M17/C" 
-        label="M17-M17 C" 
-        theme="light">
+        label="M17-M17 C">
+      </m17-web-player>
+    </div>
+    <div class="players-container">
+      <m17-web-player 
+        proxy="wss://m17rx.oe3xor.at/M17-M17/N" 
+        label="M17-M17 N">
+      </m17-web-player>
+    </div>
+    <div class="players-container">
+      <m17-web-player 
+        proxy="wss://m17rx.oe3xor.at/M17-M17/T" 
+        label="M17-M17 T">
       </m17-web-player>
     </div>
   </div>
@@ -80,20 +106,17 @@
   <div class="section">
     <h2 class="section-title">M17-XOR</h2>
     <div class="players-container">
-      <m17-web-player 
+    <m17-web-player 
       proxy="wss://m17rx.oe3xor.at/M17-XOR/A" 
-      label="M17-XOR A" 
-      theme="dark">
+      label="M17-XOR A">
     </m17-web-player>
     <m17-web-player 
       proxy="wss://m17rx.oe3xor.at/M17-XOR/B" 
-      label="M17-XOR B" 
-      theme="dark">
+      label="M17-XOR B">
     </m17-web-player>
     <m17-web-player 
       proxy="wss://m17rx.oe3xor.at/M17-XOR/C" 
-      label="M17-XOR C" 
-      theme="dark">
+      label="M17-XOR C">
     </m17-web-player>
     </div>
   </div>
