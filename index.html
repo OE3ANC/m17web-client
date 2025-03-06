@@ -61,7 +61,7 @@
   </style>
 </head>
 <body>
-  <div class="dashboard-header">
+<div class="dashboard-header">
     <h1>M17 Stream Dashboard Demo</h1>
     <p class="subtitle">Demo of the new M17 Reflector Player</p>
   </div>
@@ -70,27 +70,31 @@
     <h2 class="section-title">M17-M17</h2>
     <div class="players-container">
       <m17-web-player 
-        proxy="wss://m17rx.oe3xor.at/M17-M17/A" 
+        proxy="m17rx.oe3xor.at"
+        reflector="M17-M17"
+        module="A" 
         label="M17-M17 A"
-        theme="light"
         >
       </m17-web-player>
       <m17-web-player 
-        proxy="wss://m17rx.oe3xor.at/M17-M17/C" 
+        proxy="m17rx.oe3xor.at" 
+        reflector="M17-M17"
+        module="C" 
         label="M17-M17 C"
-        theme="dark"
         >
       </m17-web-player>
       <m17-web-player 
-        proxy="wss://m17rx.oe3xor.at/M17-M17/N" 
+        proxy="m17rx.oe3xor.at" 
+        reflector="M17-M17"
+        module="N" 
         label="M17-M17 N"
-        theme="green"
         >
       </m17-web-player>
       <m17-web-player 
-        proxy="wss://m17rx.oe3xor.at/M17-M17/T" 
+        proxy="m17rx.oe3xor.at" 
+        reflector="M17-M17"
+        module="T" 
         label="M17-M17 T"
-        theme="blue"
         >
       </m17-web-player>
     </div>
@@ -100,15 +104,21 @@
     <h2 class="section-title">M17-XOR</h2>
     <div class="players-container">
     <m17-web-player 
-      proxy="wss://m17rx.oe3xor.at/M17-XOR/A" 
+      proxy="m17rx.oe3xor.at" 
+      reflector="M17-XOR"
+      module="A" 
       label="M17-XOR A">
     </m17-web-player>
     <m17-web-player 
-      proxy="wss://m17rx.oe3xor.at/M17-XOR/B" 
+      proxy="m17rx.oe3xor.at" 
+      reflector="M17-XOR"
+      module="B" 
       label="M17-XOR B">
     </m17-web-player>
     <m17-web-player 
-      proxy="wss://m17rx.oe3xor.at/M17-XOR/C" 
+      proxy="m17rx.oe3xor.at" 
+      reflector="M17-XOR"
+      module="C" 
       label="M17-XOR C">
     </m17-web-player>
     </div>
