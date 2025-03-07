@@ -1,3 +1,3 @@
-# m17-stream
+# m17-web client
 
-Test repo for new stream client
+[Demo](https://stream.m17.app)
